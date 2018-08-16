@@ -26,7 +26,7 @@ gulp.task('js', () => {
 gulp.task('pug', () => {
     gulp.src('app/**/index.pug')
         .pipe(pug().on('error', function(error) {
-            console.log(error)
+            console.log(error);
         }))
         .pipe(gulp.dest('dist'))
         .pipe(connect.reload());
