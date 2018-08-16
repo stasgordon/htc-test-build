@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="./css/main.css")
+    title Document
+  body
+    div.content(id="tabs")
+      .container-header
+        button.tab.whiteborder Профиль
+        button.tab Друзья пользователя
+      .tabContent.profile.show
+        .profile-wrapper
+          .proflie-col-1
+            .profile-image(style="background-image: url('./img/Vitalya Gora.png')", alt="image")
+            button.btn.profile-add-to-friend-btn Добавить в друзья
+          .profile-col-2 
+            .profile-content
+              input.profile-content-input.name(type="text", value='Виталя Гора', placeholder="Имя и фамиллия")
+              input.profile-content-input.address(type="text",  value='г. Можга', placeholder="Адрес")
+            table.profile-table
+              tr
+                td Семейноe положение
+                td 
+                  input(type='text', value='холост')
+              tr
+                td Телефон
+                td 
+                  input(type='phone', value='+7 (440) 554-32-12')
+              tr
+                td E-mail
+                td
+                  input(type="email", value='vitalya@gora.ru')
+            .profile-hobby
+              p.profile-hobby-title Интересы
+              .profile-hobbie-wrapper
+                button.profile-hobby-item  музыка
+                button.profile-hobby-item компьютеры
+                button.profile-hobby-item радио
+      
+      .tabContent.friends.hide
+        .friends-wrapper
+          
+          .friends-user
+            .friends-user-image
+              img(src="./img/1.png", alt="photo")
+            .friends-user-info
+              .friends-name
+                a(href="#") Лев Бронштейн
+              .friends-user-city г. Ханты-Мансийск
+              .friends-user-status Online
+
+          .friends-user
+            .friends-user-image
+              img(src="./img/4.png", alt="photo")
+            .friends-user-info 
+              .friends-name
+                a(href="#") Находка Капитал
+              .friends-user-city г. Усть-Бельск
+        
+          .friends-user
+            .friends-user-image
+              img(src="./img/6.png", alt="photo")
+            .friends-user-info 
+              .friends-name
+                a(href="#") Яндекс Петренко
+              .friends-user-city г. Пермь
+        
+          .friends-user
+            .friends-user-image
+              img(src="./img/3.png", alt="photo")
+            .friends-user-info 
+              .friends-name
+                a(href="#") Успех Возможностей
+              .friends-user-city г. Радонеж
+              .friends-user-status Online
+
+          .friends-user
+            .friends-user-image
+              img(src="./img/5.png", alt="photo")
+            .friends-user-info 
+              .friends-name
+                a(href="#") Инна Нашлась
+              .friends-user-city г. Омск
+              .friends-user-status Online    
+        
+          .friends-user
+            .friends-user-image
+              img(src="./img/2.png", alt="photo")
+            .friends-user-info 
+              .friends-name
+                a(href="#") Алла Подольская
+              .friends-user-city г. Петропавловск-Камачатский
+              .friends-user-status Online
+
+          .friends-user
+            .friends-user-image
+              img(src="./img/2.png", alt="photo")
+            .friends-user-info 
+              .friends-name
+                a(href="#") Алла Подольская
+              .friends-user-city г. Петропавловск-Камачатский
+              .friends-user-status Online
+
+          .friends-user
+            .friends-user-image
+              img(src="./img/2.png", alt="photo")
+            .friends-user-info 
+              .friends-name
+                a(href="#") Алла Подольская
+              .friends-user-city г. Петропавловск-Камачатский
+              .friends-user-status Online
+
+          .friends-user
+            .friends-user-image
+              img(src="./img/2.png", alt="photo")
+            .friends-user-info 
+              .friends-name
+                a(href="#") Алла Подольская
+              .friends-user-city г. Петропавловск-Камачатский
+              .friends-user-status Online
+        
+        
+    script(src="./js/main.js")
